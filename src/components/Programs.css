@@ -1,0 +1,65 @@
+.programs {
+  padding: 100px 0;
+  position: relative;
+}
+
+.programs-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.programs-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.programs-subtitle {
+  font-size: 18px;
+  color: var(--text-muted);
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.program-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 229, 255, 0.1);
+}
+
+.program-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-glass);
+}
+
+.program-card-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--text-main);
+}
+
+.program-card-desc {
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 32px;
+}
+
+.program-btn {
+  width: 100%;
+}
